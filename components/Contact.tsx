@@ -65,7 +65,7 @@ export default function Contact() {
               </p>
 
               <p className="text-slate-300">
-                ✉️ manjunatha_ce@mitmysore.in
+                ✉️ manjunath_ce@mitmysore.in
               </p>
 
             </div>
