@@ -54,7 +54,7 @@ export default function Hero() {
             Centre of Excellence
 
             <span className="block text-cyan-300 mt-2">
-              Earth Systems and Geospatial Science
+              Earth Systems and Geospatial Science & Technology
             </span>
 
           </h1>
