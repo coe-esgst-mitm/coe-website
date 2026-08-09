@@ -1,81 +1,65 @@
 export default function CentreCoordinators() {
   return (
-    <section className="py-24 bg-[#0B132B] text-white">
+    <section className="py-20 bg-white">
 
       <div className="max-w-7xl mx-auto px-6">
 
-        <div className="text-center mb-16">
+        <h2 className="text-5xl font-bold text-center text-slate-900 mb-16">
+          CENTRE COORDINATORS
+        </h2>
 
-          <span className="bg-cyan-500 text-white px-5 py-2 rounded-full text-sm font-semibold">
-            OUR TEAM
-          </span>
+        <div className="grid md:grid-cols-2 gap-20">
 
-          <h2 className="text-5xl font-bold mt-6">
-            Centre Coordinators
-          </h2>
+          {/* Left Coordinator */}
 
-          <p className="mt-6 text-slate-300 max-w-3xl mx-auto">
-            The Centre of Excellence is coordinated by dedicated faculty members
-            committed to advancing research, consultancy and training in
-            Geospatial Science and Earth Observation Technologies.
-          </p>
+          <div className="text-left">
 
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-10">
-
-          <div className="bg-slate-800 rounded-2xl shadow-xl p-10 border border-slate-700">
-
-            <h3 className="text-3xl font-bold text-cyan-400">
-              Prof. Manoj B.R.
+            <h3 className="text-4xl font-bold text-slate-900">
+              Prof. MANJUNATHA R. N.
             </h3>
 
-            <p className="mt-6 text-slate-300">
+            <h4 className="text-2xl font-semibold mt-3 text-slate-700">
               Assistant Professor
+            </h4>
+
+            <p className="mt-5 text-lg text-slate-700 leading-8">
+              <strong>B.E.</strong> (Civil Engg.),
+              <strong> M.Tech.</strong> (Hydraulics),
+              <strong> Ph.D.</strong> in Water Resources,
+              <strong> NITK</strong>
             </p>
 
-            <p className="text-slate-300">
-              Department of Civil Engineering
-            </p>
-
-            <p className="text-slate-300">
-              Maharaja Institute of Technology Mysore
-            </p>
-
-            <p className="mt-6 text-slate-400">
-              Research Scholar
-            </p>
-
-            <p className="text-slate-300">
-              National Institute of Technology Karnataka (NITK), Surathkal
+            <p className="text-lg text-slate-700 leading-8">
+              MISH, MIWWA,
+              AICTE-QIP-PG Certified,
+              NIT Bhopal
             </p>
 
           </div>
 
-          <div className="bg-slate-800 rounded-2xl shadow-xl p-10 border border-slate-700">
+          {/* Right Coordinator */}
 
-            <h3 className="text-3xl font-bold text-cyan-400">
-              Prof. Manjunatha R. N.
+          <div className="text-right">
+
+            <h3 className="text-4xl font-bold text-slate-900">
+              Prof. MANOJ B. R.
             </h3>
 
-            <p className="mt-6 text-slate-300">
+            <h4 className="text-2xl font-semibold mt-3 text-slate-700">
               Assistant Professor
+            </h4>
+
+            <p className="mt-5 text-lg text-slate-700 leading-8">
+              <strong>B.E.</strong> (Civil Engg.),
+              <strong> M.Tech.</strong> (Env. Engg.),
+              <strong> Ph.D.</strong> in Geoinformatics,
+              <strong> NITK</strong>
             </p>
 
-            <p className="text-slate-300">
-              Department of Civil Engineering
-            </p>
-
-            <p className="text-slate-300">
-              Maharaja Institute of Technology Mysore
-            </p>
-
-            <p className="mt-6 text-slate-400">
-              Research Scholar
-            </p>
-
-            <p className="text-slate-300">
-              National Institute of Technology Karnataka (NITK), Surathkal
+            <p className="text-lg text-slate-700 leading-8">
+              MISH, MIWWA,
+              AICTE-QIP-PG Certified,
+              NIT Bhopal
             </p>
 
           </div>
