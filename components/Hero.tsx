@@ -1,76 +1,151 @@
-"use client";
-
 import Image from "next/image";
-import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section
+      className="relative min-h-screen flex items-center"
+      style={{
+        backgroundImage: "url('/images/hero-bg.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-[#081229]/70"></div>
 
-      {/* Background */}
-      <Image
-        src="/images/hero-bg.jpg"
-        alt="Hero Background"
-        fill
-        priority
-        className="object-cover"
-      />
+      <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 w-full">
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-blue-950/80 to-slate-900/70" />
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
+          {/* LEFT CONTENT */}
 
-        {/* Logos */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="flex gap-5 mb-10"
-        >
-          <Image src="/logos/mit-logo.png" alt="MIT" width={85} height={85} />
-          <Image src="/logos/civil-logo.png" alt="Civil" width={85} height={85} />
-          <Image src="/logos/coe-logo.png" alt="COE" width={85} height={85} />
-        </motion.div>
+          <div>
 
-        {/* Text */}
-        <motion.div
-          initial={{ opacity: 0, y: 35 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-          className="max-w-4xl"
-        >
+            {/* Logos */}
 
-          <p className="uppercase tracking-[6px] text-cyan-300 font-semibold">
-            MAHARAJA INSTITUTE OF TECHNOLOGY MYSORE
-          </p>
+            <div className="flex gap-4 bg-white/10 backdrop-blur-md rounded-2xl p-4 w-fit shadow-xl border border-white/20 mb-10">
 
-          <p className="mt-2 text-xl text-gray-200">
-            Department of Civil Engineering
-          </p>
+              <Image
+                src="/logos/mit-logo.png"
+                alt="MIT"
+                width={70}
+                height={70}
+                className="rounded-lg bg-white"
+              />
 
-          <h1 className="mt-6 text-6xl lg:text-7xl font-black text-white leading-tight">
+              <Image
+                src="/logos/civil-logo.png"
+                alt="Civil"
+                width={70}
+                height={70}
+                className="rounded-lg bg-white"
+              />
 
-            Centre of Excellence
+              <Image
+                src="/logos/coe-logo.png"
+                alt="COE"
+                width={70}
+                height={70}
+                className="rounded-lg bg-white"
+              />
 
-            <span className="block text-cyan-300 mt-2">
-              Earth Systems and Geospatial Science & Technology
-            </span>
+            </div>
 
-          </h1>
+            <p className="uppercase tracking-[6px] text-cyan-400 font-semibold">
+              Maharaja Institute of Technology Mysore
+            </p>
 
-          <p className="mt-8 text-xl text-gray-200 leading-9 max-w-3xl">
+            <p className="text-2xl text-white mt-4">
+              Department of Civil Engineering
+            </p>
 
-            Advancing Research, Consultancy, Capacity Building,
-            Geospatial Innovation and Earth Observation Technologies
-            for sustainable engineering and societal development.
+            <h2 className="text-5xl lg:text-6xl font-extrabold text-white mt-10">
+              Centre of Excellence
+            </h2>
 
-          </p>
+            <h1 className="text-6xl lg:text-7xl font-extrabold text-cyan-300 leading-tight mt-5">
+              Earth Systems &
+              <br />
+              Geospatial Science
+            </h1>
 
-        </motion.div>
+            <p className="mt-8 text-xl text-cyan-200 font-medium">
+              Research • Consultancy • Capacity Building • Innovation
+            </p>
+
+            <p className="mt-8 text-lg text-gray-200 leading-8 max-w-2xl">
+              Advancing Geospatial Technologies through Research,
+              Consultancy, Capacity Building and Earth Observation
+              for Sustainable Engineering and Societal Development.
+            </p>
+
+            <div className="flex flex-wrap gap-5 mt-10">
+
+              <Link
+                href="#about"
+                className="bg-cyan-500 hover:bg-cyan-600 transition px-8 py-4 rounded-xl font-semibold text-white shadow-lg"
+              >
+                Explore Website
+              </Link>
+
+              <Link
+                href="/internship"
+                className="border border-white hover:bg-white hover:text-black transition px-8 py-4 rounded-xl font-semibold text-white"
+              >
+                3-Day Internship
+              </Link>
+
+            </div>
+
+          </div>
+
+          {/* RIGHT SIDE */}
+
+          <div className="flex justify-center lg:justify-end">
+
+            <div className="bg-white rounded-3xl shadow-2xl p-10 max-w-md w-full">
+
+              <span className="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold">
+                UPCOMING PROGRAMME
+              </span>
+
+              <h3 className="text-3xl font-bold text-slate-900 mt-6">
+                3-Day Internship Training
+              </h3>
+
+              <p className="mt-5 text-slate-600 leading-8">
+                Downloading, Processing and Terrain Analysis of
+                Digital Elevation Models (DEM) using Open-Source
+                GIS Software (QGIS).
+              </p>
+
+              <div className="mt-8 space-y-3">
+
+                <p className="text-lg">
+                  📅 <strong>August 2026</strong>
+                </p>
+
+                <p className="text-lg">
+                  📍 MIT Mysore
+                </p>
+
+              </div>
+
+              <Link
+                href="/internship"
+                className="mt-10 inline-block bg-blue-700 hover:bg-blue-800 transition text-white px-8 py-4 rounded-xl font-semibold"
+              >
+                View Details →
+              </Link>
+
+            </div>
+
+          </div>
+
+        </div>
 
       </div>
-
     </section>
   );
 }
