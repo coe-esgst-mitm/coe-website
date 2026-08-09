@@ -1,6 +1,26 @@
-import Link from "next/link";
+"use client";
+
+import { useState } from "react";
 
 export default function InternshipPage() {
+
+  const [showModal, setShowModal] = useState(false);
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
+  const correctPassword = "COEESGST_DEM";
+
+  const handleDownload = () => {
+    if (password === correctPassword) {
+      window.open("/downloads/Internship_Manual.pdf", "_blank");
+      setShowModal(false);
+      setPassword("");
+      setError("");
+    } else {
+      setError("Incorrect Access Code");
+    }
+  };
+
   return (
     <main className="min-h-screen bg-gray-50">
 
@@ -92,10 +112,10 @@ export default function InternshipPage() {
 
         <div className="grid md:grid-cols-2 gap-8">
 
-          <a
-            href="/downloads/Internship_Manual.pdf"
-            target="_blank"
-            className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition"
+          {/* Protected Manual */}
+          <button
+            onClick={() => setShowModal(true)}
+            className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition text-left"
           >
             <h3 className="text-2xl font-bold text-blue-700">
               📘 Internship Manual
@@ -104,8 +124,14 @@ export default function InternshipPage() {
             <p className="mt-3 text-gray-600">
               Download the complete practical manual.
             </p>
-          </a>
 
+            <p className="mt-5 text-red-600 font-semibold">
+              🔒 Access Code Required
+            </p>
+
+          </button>
+
+          {/* Schedule */}
           <a
             href="/downloads/Schedule.pdf"
             target="_blank"
@@ -118,11 +144,66 @@ export default function InternshipPage() {
             <p className="mt-3 text-gray-600">
               Download the detailed training schedule.
             </p>
+
           </a>
 
         </div>
 
       </section>
+
+      {/* Password Popup */}
+
+      {showModal && (
+
+        <div className="fixed inset-0 bg-black/60 flex justify-center items-center z-50">
+
+          <div className="bg-white rounded-2xl shadow-2xl p-8 w-[420px]">
+
+            <h2 className="text-3xl font-bold text-blue-900 mb-4">
+              🔒 Training Manual
+            </h2>
+
+            <p className="text-gray-600 mb-6">
+              Enter the Access Code provided during the programme.
+            </p>
+
+            <input
+              type="password"
+              value={password}
+              onChange={(e)=>setPassword(e.target.value)}
+              placeholder="Enter Access Code"
+              className="w-full border rounded-lg p-3"
+            />
+
+            {error && (
+              <p className="text-red-600 mt-3 font-medium">
+                {error}
+              </p>
+            )}
+
+            <div className="flex justify-end gap-4 mt-8">
+
+              <button
+                onClick={()=>setShowModal(false)}
+                className="px-5 py-2 rounded-lg border"
+              >
+                Cancel
+              </button>
+
+              <button
+                onClick={handleDownload}
+                className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-2 rounded-lg"
+              >
+                Download
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      )}
 
     </main>
   );
