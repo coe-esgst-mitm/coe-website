@@ -64,7 +64,7 @@ export default function Hero() {
             </h2>
 
             <h1 className="text-6xl font-extrabold leading-tight text-cyan-300 mt-4">
-              Earth Systems &
+              Earth Systems and
               <br />
               Geospatial Science
               <br />
