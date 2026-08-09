@@ -172,7 +172,7 @@ export default function InternshipPage() {
               value={password}
               onChange={(e)=>setPassword(e.target.value)}
               placeholder="Enter Access Code"
-              className="w-full border rounded-lg p-3"
+              className="w-full border rounded-lg p-3 outline-none"
             />
 
             {error && (
