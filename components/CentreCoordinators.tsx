@@ -10,56 +10,68 @@ export default function CentreCoordinators() {
 
         <div className="grid md:grid-cols-2 gap-20">
 
-          {/* Left Coordinator */}
+          {/* Left */}
 
           <div className="text-left">
+
+            <h3 className="text-4xl font-bold text-slate-900">
+              Prof. MANOJ B. R.
+            </h3>
+
+            <h4 className="text-2xl font-semibold mt-2 text-slate-700">
+              Assistant Professor
+            </h4>
+
+            <p className="mt-5 text-lg text-slate-700">
+              Department of Civil Engineering
+            </p>
+
+            <p className="text-lg text-slate-700">
+              Maharaja Institute of Technology Mysore
+            </p>
+
+            <p className="mt-6 text-lg text-slate-700 leading-8">
+              <strong>B.E.</strong> (Civil Engg.),
+              <strong> M.Tech.</strong> (Environmental Engineering),
+              <strong> Ph.D.</strong> in Geoinformatics,
+              <strong> NITK</strong>
+            </p>
+
+            <p className="text-lg text-slate-700">
+              MISH, MIWWA, AICTE-QIP-PG Certified, NIT Bhopal
+            </p>
+
+          </div>
+
+          {/* Right */}
+
+          <div className="text-right">
 
             <h3 className="text-4xl font-bold text-slate-900">
               Prof. MANJUNATHA R. N.
             </h3>
 
-            <h4 className="text-2xl font-semibold mt-3 text-slate-700">
+            <h4 className="text-2xl font-semibold mt-2 text-slate-700">
               Assistant Professor
             </h4>
 
-            <p className="mt-5 text-lg text-slate-700 leading-8">
+            <p className="mt-5 text-lg text-slate-700">
+              Department of Civil Engineering
+            </p>
+
+            <p className="text-lg text-slate-700">
+              Maharaja Institute of Technology Mysore
+            </p>
+
+            <p className="mt-6 text-lg text-slate-700 leading-8">
               <strong>B.E.</strong> (Civil Engg.),
               <strong> M.Tech.</strong> (Hydraulics),
               <strong> Ph.D.</strong> in Water Resources,
               <strong> NITK</strong>
             </p>
 
-            <p className="text-lg text-slate-700 leading-8">
-              MISH, MIWWA,
-              AICTE-QIP-PG Certified,
-              NIT Bhopal
-            </p>
-
-          </div>
-
-          {/* Right Coordinator */}
-
-          <div className="text-right">
-
-            <h3 className="text-4xl font-bold text-slate-900">
-              Prof. MANOJ B. R.
-            </h3>
-
-            <h4 className="text-2xl font-semibold mt-3 text-slate-700">
-              Assistant Professor
-            </h4>
-
-            <p className="mt-5 text-lg text-slate-700 leading-8">
-              <strong>B.E.</strong> (Civil Engg.),
-              <strong> M.Tech.</strong> (Env. Engg.),
-              <strong> Ph.D.</strong> in Geoinformatics,
-              <strong> NITK</strong>
-            </p>
-
-            <p className="text-lg text-slate-700 leading-8">
-              MISH, MIWWA,
-              AICTE-QIP-PG Certified,
-              NIT Bhopal
+            <p className="text-lg text-slate-700">
+              MISH, MIWWA, AICTE-QIP-PG Certified, NIT Bhopal
             </p>
 
           </div>
