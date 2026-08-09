@@ -23,7 +23,7 @@ export default function Contact() {
           </h3>
 
           <p className="mt-4 text-slate-300">
-            Earth Systems & Geospatial Science
+            Earth Systems and Geospatial Science & Technology (CoE-ESGST)
           </p>
 
           <p className="text-slate-300">
