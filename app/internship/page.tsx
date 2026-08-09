@@ -172,7 +172,9 @@ export default function InternshipPage() {
               value={password}
               onChange={(e)=>setPassword(e.target.value)}
               placeholder="Enter Access Code"
-              className="w-full border rounded-lg p-3 outline-none"
+              className="w-full border-2 border-gray-300 rounded-lg p-3
+                         text-black placeholder:text-gray-500
+                         bg-white focus:outline-none focus:border-blue-600"
             />
 
             {error && (
@@ -185,7 +187,8 @@ export default function InternshipPage() {
 
               <button
                 onClick={()=>setShowModal(false)}
-                className="px-5 py-2 rounded-lg border"
+                className="px-5 py-2 rounded-lg border border-gray-400
+                           bg-gray-100 text-gray-800 hover:bg-gray-200"
               >
                 Cancel
               </button>
