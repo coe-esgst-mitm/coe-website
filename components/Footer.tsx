@@ -9,7 +9,7 @@ export default function Footer() {
         </h3>
 
         <p className="mt-3 text-lg">
-          Earth Systems & Geospatial Science
+          Earth Systems and Geospatial Science & Technology (CoE-ESGST)
         </p>
 
         <p className="mt-2">
@@ -23,7 +23,7 @@ export default function Footer() {
         <div className="border-t border-slate-700 mt-8 pt-6">
 
           <p className="text-slate-400">
-            © 2026 Centre of Excellence – Earth Systems & Geospatial Science,
+            © 2026 Centre of Excellence – Earth Systems and Geospatial Science & Technology (CoE-ESGST),
             Department of Civil Engineering, Maharaja Institute of Technology Mysore.
             All Rights Reserved.
           </p>
