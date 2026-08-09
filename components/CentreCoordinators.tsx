@@ -33,10 +33,8 @@ export default function CentreCoordinators() {
             <p className="mt-6 text-lg text-slate-700 leading-8">
               <strong>B.E.</strong> (Civil Engg.),
               <strong> M.Tech.</strong> (Environmental Engineering),
-              <strong> Ph.D.</strong> in Geoinformatics,
-              <strong> NITK</strong>
+              <strong> (Ph.D.</strong> in Geoinformatics, NITK)
             </p>
-
             <p className="text-lg text-slate-700">
               MISH, MIWWA, AICTE-QIP-PG Certified, NIT Bhopal
             </p>
@@ -66,10 +64,8 @@ export default function CentreCoordinators() {
             <p className="mt-6 text-lg text-slate-700 leading-8">
               <strong>B.E.</strong> (Civil Engg.),
               <strong> M.Tech.</strong> (Hydraulics),
-              <strong> Ph.D.</strong> in Water Resources,
-              <strong> NITK</strong>
+              <strong> (Ph.D.</strong> in Water Resources, NITK)
             </p>
-
             <p className="text-lg text-slate-700">
               MISH, MIWWA, AICTE-QIP-PG Certified, NIT Bhopal
             </p>
